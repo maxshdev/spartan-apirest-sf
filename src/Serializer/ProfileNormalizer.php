@@ -13,10 +13,8 @@ class ProfileNormalizer implements NormalizerInterface
     private $normalizer;
     private $urlHelper;
 
-    public function __construct(
-        ObjectNormalizer $normalizer,
-        UrlHelper $urlHelper
-    ) {
+    public function __construct( ObjectNormalizer $normalizer, UrlHelper $urlHelper ) 
+    {
         $this->normalizer = $normalizer;
         $this->urlHelper = $urlHelper;
     }
