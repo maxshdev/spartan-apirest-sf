@@ -17,8 +17,8 @@ class Permission
     #[ORM\Column(length: 255)]
     private ?string $description = null;
 
-    #[ORM\Column(type: Types::SMALLINT)]
-    private ?int $active = null;
+    #[ORM\Column]
+    private ?bool $active = null;
 
     public function getId(): ?int
     {
@@ -37,12 +37,12 @@ class Permission
         return $this;
     }
 
-    public function getActive(): ?int
+    public function isActive(): ?bool
     {
         return $this->active;
     }
 
-    public function setActive(int $active): self
+    public function setActive(bool $active): self
     {
         $this->active = $active;
 

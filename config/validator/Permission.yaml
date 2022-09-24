@@ -1,0 +1,12 @@
+App\Entity\Permission:
+    properties:
+        description:
+            - NotBlank: ~
+            - Length:
+                min: 4
+                max: 50
+                minMessage: 'The Description must be at least {{ limit }} characters long'
+                maxMessage: 'The Description cannot be longer than {{ limit }} characters'
+        active:
+            - Type:
+                type: bool
