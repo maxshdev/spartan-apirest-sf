@@ -1,0 +1,8 @@
+App\Entity\Permission:
+    attributes:
+        id:
+            groups: ['permission']
+        description:
+            groups: ['permission']
+        active:
+            groups: ['permission']
