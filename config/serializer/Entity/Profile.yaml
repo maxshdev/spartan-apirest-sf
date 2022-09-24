@@ -1,0 +1,16 @@
+App\Entity\Profile:
+    attributes:
+        id:
+            groups: ['profile']
+        firstname:
+            groups: ['profile']
+        lastname:
+            groups: ['profile']
+        address:
+            groups: ['profile']
+        country:
+            groups: ['profile']
+        locality:
+            groups: ['profile']
+        image:
+            groups: ['profile']

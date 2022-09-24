@@ -1,0 +1,12 @@
+App\Form\Model\ProfileDto:
+    properties:
+        firstname:
+            - NotBlank: ~
+        lastname:
+            - NotBlank: ~
+        address:
+            - NotBlank: ~
+        country:
+            - NotBlank: ~
+        locality:
+            - NotBlank: ~

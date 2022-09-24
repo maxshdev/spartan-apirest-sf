@@ -36,6 +36,7 @@ class PermissionsController extends AbstractFOSRestController
         $form->handleRequest($request);
         
         if ($form->isSubmitted() && $form->isValid()) { 
+            
             $em->persist($entity);
             $em->flush();
 
